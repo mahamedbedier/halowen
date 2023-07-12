@@ -1,0 +1,572 @@
+*{
+    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to right,rgba(35, 109, 35, 0.842),rgba(155, 113, 23, 0.815)) ;
+}
+header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 120px;
+}
+.logo h1{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: aliceblue;
+    cursor: pointer;
+}
+.humburger{
+    display: none;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    list-style-type:none;
+    display: flex;
+    gap: 10px;
+}
+header a{
+    text-decoration: none;
+    text-transform:capitalize;
+    font-size: 18px;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.8s;
+}
+header a:hover, .active{
+    background-color: #ccdceb;
+    color: black;
+}
+header button{
+    width: 110px;
+    height: 55px;
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 200;
+    text-transform: capitalize;
+    border:solid aliceblue 2px;
+    border-radius: 25px;
+    margin-left: 35px;
+    transition: 0.8s;
+}
+header button:hover{
+    background-color: aliceblue;
+    color:black;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 80px 30PX;
+}
+.main-img{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main-img-text{
+    width: 100%;
+    margin-bottom: 150px;
+}
+.main-img-text h5{
+    font-size: 28px;
+    color: aliceblue;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    word-spacing: 2px;;
+    margin-bottom: 10px;
+}
+.main-img-text p{
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 100;
+    text-transform: capitalize;
+    word-spacing: 2px;
+}
+.main-img-img{
+    width: 100%;
+}
+.main-img img{
+    width: 350px;
+}
+.main-text{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.main-text h5{
+    font-size: 28px;
+    color: aliceblue;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    word-spacing: 2px;
+}
+.main-text h2{
+    font-size: 66px;
+    letter-spacing: 1.5px;
+    color: aliceblue;
+    font-weight: 900;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    margin-bottom: 20px;
+}
+.main-text p{
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 100;
+    text-transform: capitalize;
+    word-spacing: 2px;
+}
+.main-text button{
+    width: 150px;
+    height: 70px;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    background-color: orangered;
+    border: solid orangered 2px;
+    border-radius: 15px;
+    margin-top: 15px;
+    transition: 0.8s;
+}
+.main-text button:hover{
+    color: black;
+    background-color: rgb(236, 83, 27);
+    border: solid wheat 2px;
+}
+.favorite-scare-category{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    overflow: hidden;
+}
+.favorite-scare-category-tittle{
+    font-size: 28px;
+    color: aliceblue;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.favorite-scare-category-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    width: 200px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    padding: 10px;
+    border: solid transparent 1px;
+    transition: 0.8s;
+}
+.card:hover{
+    border: solid aliceblue 1px;
+}
+.card-img img{
+    width: 200px;
+    height: 220px;
+    filter: blur(1px);
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+.card:hover .card-img img{
+    transform: scale(1.05);
+    filter: blur(0);
+}
+
+.favorite-scare-category-cards h4{
+    color: aliceblue;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.favorite-scare-category-cards p{
+    color: #ccdceb;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.about-halowen-night{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px 50px;
+    margin-bottom: 50px;
+}
+.about-halowen-night-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.about-halowen-night-text h3{
+    color: aliceblue;
+    font-size: 38px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+.about-halowen-night-text p{
+    color: #ccdceb;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.about-halowen-night-text button{
+    width: 30%;
+    height: 60px;
+    font-size: 16px;
+    background-color: orangered;
+    color: black;
+    border: solid 1px orangered;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.about-halowen-night-text button:hover{
+    border: solid 1px wheat;
+}
+.about-halowen-night-img{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-halowen-night-img img{
+    width: 60%;
+    margin: auto;
+}
+.trick-or-treat{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.trick-or-treat-title{
+    font-size: 32px;
+    color: aliceblue;
+    text-transform: capitalize;
+}
+.trick-or-treat-cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 40px 10px;
+    gap: 20px;
+}
+.trick-or-treat-card{
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    border-radius: 10px;
+    padding: 20px;
+    background:linear-gradient(to top left,rgba(48, 113, 48, 0.582),rgba(145, 110, 35, 0.541)) ;
+    box-shadow: 0 0 25px rgba(22, 22, 22, 0.205);
+    position: relative;
+    overflow: hidden;
+}
+
+.trick-or-treat-card img{
+    width: 100px;
+    height: 110px;
+    transition: 0.5s;
+}
+.trick-or-treat-card:hover img{
+    transform: scale(1.09); 
+}
+.trick-or-treat-cards h4{
+    font-size: 22px;
+    color: aliceblue;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.trick-or-treat-cards p{
+    color: aliceblue;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.buy-now{
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+    transition: 0.5s;
+}
+.trick-or-treat-card:hover .buy-now{
+    bottom: 10px;
+}
+.buy-now button{
+    width: 40%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: orangered;
+    color: black;
+    border: solid 1px orangered;
+    transition: 0.3s;
+}
+.buy-now button:hover{
+    border: solid 1px aliceblue;
+}
+.buy-now p{
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.price{
+    position: absolute;
+    bottom: 10px;
+    left: -30px;
+    border-radius: 5px;
+    background-color: green;
+    transition: 0.5s;
+}
+.trick-or-treat-card:hover .price{
+    bottom: 10px;
+    left: 10px;
+}
+.price p{
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding: 3px;
+}
+/* scroll bar */
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: rgba(155, 113, 23, 0.815);
+}
+::-webkit-scrollbar-thumb{
+    background-color:rgba(48, 121, 48, 0.582);
+    border-radius: 500px;
+}
+@media screen and (max-width:900px) {
+    header{
+        padding: 10px 60px;
+    }
+}
+@media screen and (max-width:800px){
+    .about-halowen-night-img img{
+        width: 80%;
+    }
+    .about-halowen-night-text button{
+        width: 50%;
+    }
+    
+}
+@media screen and (max-width:750px){
+    .main{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .main-img,
+    .main-text{
+        width: 100%;
+        align-items: center;
+    }
+    .main-img img{
+        width: 60%;
+    }
+    .main-img-text{
+        margin-bottom: 30px;
+    }
+
+    
+}
+@media screen and (max-width:700px) {
+    header{
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width:600px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 0px;
+        width: 200px;
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        overflow: hidden;
+        transition: 0.3s;
+        border-radius: 10px;
+        background:linear-gradient(to top left,rgba(43, 129, 43, 0.5),rgba(178, 130, 28, 0.5)) ;
+        opacity: 0;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    .humburger{
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        position: relative;
+        gap: 5px;
+    }
+    .humburger .line{
+        width: 100%;
+        height: 2px;
+        background-color: aliceblue;
+        transition: 0.3s;
+    }
+    
+    .humburger.active .line{
+        position: absolute;
+    }
+    .humburger.active .line.l1{
+        rotate: 45deg;
+        transition: 0.3s;
+    }
+    .humburger.active .line.l2{
+        opacity: 0;
+        transition: 0.1s;
+    }
+    .humburger.active .line.l3{
+        rotate: -45deg;
+        transition: 0.3s;
+    }
+    nav.active{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 300px;
+        width: 200px;
+        border-radius: 10px;
+        background:linear-gradient(to top left,rgba(43, 129, 43, 0.5),rgba(178, 130, 28, 0.5)) ;
+        right: 20px;
+        top: 60px;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    nav.active ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        opacity: 1;
+        transition: 0.1s;
+    }
+
+}
+@media screen and (max-width:650px){
+
+}
+@media screen and (max-width:550px){
+    .about-halowen-night{
+        flex-direction: column;
+    }
+    .about-halowen-night-text{
+        width: 100%;
+    }
+    .about-halowen-night-img img{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:400px){
+    .logo h1{
+        font-size: 30px;
+    }
+    .main-img-text h5,
+    .main-text h5{
+        font-size: 22px;
+    }
+    .main-img-text p{
+        font-size: 14px;
+    }
+    .main-text h2{
+        font-size: 40px;
+    }
+    .favorite-scare-category-cards .card-img img{
+        width: 150px;
+        height: 170px;
+    }
+    .favorite-scare-category-cards h4{
+        font-size: 18px;
+    }
+    .favorite-scare-category-cards p{
+        font-size: 12px;
+    }
+    .about-halowen-night-text h3{
+        font-size: 28px;
+    }
+    .about-halowen-night-text p,
+    .about-halowen-night-text button{
+        font-size: 14px;
+    }
+    .favorite-scare-category-tittle h2{
+        font-size: 24px;
+    }
+    .trick-or-treat-title h2{
+        font-size: 26px;
+    }
+    .trick-or-treat-card-text h4{
+        font-size: 18px;
+    }
+    .trick-or-treat-card-text p{
+        font-size: 10px;
+    }
+    
+}
+
